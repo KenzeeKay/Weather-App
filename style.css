@@ -22,6 +22,11 @@ body {
   border-radius: 50px;
   padding: 30px;
 }
+li {
+  list-style: none;
+  text-align: center;
+  margin: 20px;
+}
 
 .grid {
   padding: 50px;
@@ -33,4 +38,8 @@ body {
 }
 img {
   text-align: center;
+  margin: 80px;
+}
+.units {
+  position: relative;
 }
