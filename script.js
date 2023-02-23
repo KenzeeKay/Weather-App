@@ -29,8 +29,9 @@ function displayWeatherCondition(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  celsiusTemperature = response.data.main.temp;
   cityElem.innerHTML = response.data.name;
-  tempElem.innerHTML = Math.round(response.data.main.temp);
+  tempElem.innerHTML = Math.round(celsiusTemperature);
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
