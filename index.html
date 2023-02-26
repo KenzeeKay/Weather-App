@@ -15,84 +15,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
 
-    <form id ="search-form">
-      <input 
-      id = "city-input" 
-      type="search" 
-      placeholder="Search city here" />
+    <form id="search-form">
+      <input id="city-input" type="search" placeholder="Search city here" />
       <input type="submit" />
     </form>
- 
-
   </head>
   <body>
+    <h1>Current Temp in:</h1>
 
-      <h1>Current Temp in:</h1>
-     
-      <h2 id="city"></h2>
-      <h3><span id = "temperature"></span>
-        <span class="units"
-        ><a href="#" id="celsius-link">°C</a>| 
-          <a href="#" id="fahrenheit-link"> °F</a></span>
-        </h3>
-         <ul>
-          <li>Last Updated at: <span id="date"></span>
-          </li>
-          <li id="description">
-            Clear
-          </li>
-        </ul>
-       <div class="row">
-        <div class="col-6" id="image">
-          <img 
+    <h2 id="city"></h2>
+    <h3>
+      <span id="temperature"></span>
+      <span class="units"
+        ><a href="#" id="celsius-link">°C</a>|
+        <a href="#" id="fahrenheit-link"> °F</a></span
+      >
+    </h3>
+    <ul>
+      <li>Last Updated at: <span id="date"></span></li>
+      <li id="description">Clear</li>
+    </ul>
+    <div class="row">
+      <div class="col-6" id="image">
+        <img
           src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
           id="icon"
-          />
-        </div>
-       
-        <div class="col-6">
-        
+        />
+      </div>
+
+      <div class="col-6">
         <ul>
-          <li>
-            Precipitation: 0%
-          </li>
-          <li>
-            Humidity: <span id="humidity"></span>%
-          </li>
-          <li>
-            Wind Speed: <span id="wind"></span> km/hr
-          </li>
+          <li>Precipitation: 0%</li>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind Speed: <span id="wind"></span> km/hr</li>
         </ul>
-        </div>
-     
-      
-      
       </div>
-<div class="grid">
-      <div class="container text-center">
-        <div class="row row-cols-5">
-          <div class="col">12/04/2022</div>
-          <div class="col">12/05/2022</div>
-          <div class="col">12/06/2022</div>
-          <div class="col">12/07/2022</div>
-          <div class="col">12/08/2022</div>
-          <div class="col">☀️</div>
-          <div class="col">🌧</div>
-          <div class="col">⛅️</div>
-          <div class="col">🌧</div>
-          <div class="col">🌤</div>
-          <div class="col">65°</div>
-          <div class="col">70°</div>
-          <div class="col">66°</div>
-          <div class="col">60°</div>
-          <div class="col">60°</div>
-        </div>
-      </div>
+
+      <div class="weather-forecast" id="forecast"></div>
     </div>
-    </div>
-           <span id = "coded-by"><a href="https://github.com/KenzeeKay/Weather-App" target="blank" >Open-source </a> code by Kenzee </span>
- 
-    <script src = "script.js"></script>
+
+    <span id="coded-by"
+      ><a href="https://github.com/KenzeeKay/Weather-App" target="blank"
+        >Open-source
+      </a>
+      code by Kenzee
+    </span>
+
+    <script src="script.js"></script>
   </body>
 </html>
-
